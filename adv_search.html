@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Advanced Search</title>
+
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .logo-wrapper {
+        max-height: 250px;
+        color: #d93025;
+        margin: 25px 35px;
+        font-size: 20px;
+      }
+
+      .logo-wrapper .logo-txt {
+        margin-left: 10px;
+      }
+
+      .logo-divider {
+        border-bottom: 1px solid #ebebeb;
+      }
+
+      .search-wrapper {
+        max-height: 160px;
+        flex-shrink: 0;
+        box-sizing: border-box;
+      }
+
+      .search-wrapper form {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 2% 0 45px;
+      }
+
+      .search-wrapper form .form-heading span {
+        font-size: 16px;
+      }
+
+      .search-wrapper form .row {
+        display: flex;
+        align-items: center;
+        width: 70vw;
+        padding: 8px 0px;
+        font-size: 13px;
+      }
+
+      .search-wrapper form .row label {
+        width: 16%;
+        min-width: 167px;
+      }
+
+      .search-wrapper form .row input {
+        float: left;
+        width: 50%;
+        min-width: 167px;
+        height: 25px;
+        padding: 2px 10px;
+        border: 1px solid #d9d9d9;
+        text-align: left;
+        border-radius: 1px;
+        border-top: 1px solid #c0c0c0;
+        color: #000;
+      }
+
+      .search-wrapper form .last-row {
+        height: 25px;
+        padding: 2px;
+        margin: 0px;
+        min-width: 167px;
+        width: 50%;
+        text-align: end;
+        align-items: end;
+        justify-content: end;
+      }
+
+      .search-wrapper form .search-submit {
+        min-width: 120px;
+        height: 30px;
+        background-color: #4d90fe;
+        background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+        border: 1px solid #3079ed;
+        font-size: 11px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+        padding: 8px;
+        box-shadow: none;
+        color: #fff;
+        margin: 10px 0px;
+        border-radius: 2px;
+        outline: 0;
+      }
+
+      .search-wrapper form .search-submit:hover {
+        background-image: -webkit-linear-gradient(top, #4787ed, #4d90fe);
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="page-title">
+        <span>Jeyasurya U R</span>
+      </div>
+      <ul class="top-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./img_search.html">Image Search</a></li>
+        <li><a href="./adv_search.html" class="active">Advanced Search</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <div class="logo-wrapper">
+        <span class="logo-txt">Advanced Search</span>
+      </div>
+      <div class="logo-divider"></div>
+      <div class="search-wrapper">
+        <form action="https://www.google.com/search" autocomplete="off">
+          <div class="row form-heading">
+            <span>Find pages with...</span>
+          </div>
+          <div class="row">
+            <label>all these words:</label>
+            <input type="text" name="as_q" id="q" />
+          </div>
+          <div class="row">
+            <label>this exact word or phrase:</label>
+            <input type="text" name="as_epq" id="q" />
+          </div>
+          <div class="row">
+            <label>any of these words:</label>
+            <input type="text" name="as_oq" id="q" />
+          </div>
+          <div class="row">
+            <label>none of these words:</label>
+            <input type="text" name="as_eq" id="q" />
+          </div>
+          <div class="last-row submit-btn-wrap">
+            <input
+              type="submit"
+              value="Advanced Search"
+              class="search-submit"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
